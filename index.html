@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КарП</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <div class="heroes grid">
+                    <form class="heroes__form grid">
+                        <div class="heroes__form-data grid">
+                            <div class="heroes__select">
+                                <button type="button" class="heroes__select-action flex">
+                                    <span>Выберите категорию</span>
+                                    <svg class="hover" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.97482 4.29283L1.94286 0.325865C1.72946 0.11715 1.44078 4.02805e-08 1.13988 0C0.838981 -4.02801e-08 0.550307 0.11715 0.336906 0.325865C0.230152 0.430041 0.145419 0.553981 0.0875947 0.690538C0.0297706 0.827095 1.90033e-08 0.973565 0 1.1215C-1.90033e-08 1.26943 0.0297706 1.4159 0.0875947 1.55246C0.145419 1.68902 0.230152 1.81296 0.336906 1.91713L5.16615 6.66852C5.27203 6.77356 5.398 6.85693 5.53679 6.91382C5.67559 6.97071 5.82446 7 5.97482 7C6.12517 7 6.27404 6.97071 6.41284 6.91382C6.55163 6.85693 6.6776 6.77356 6.78349 6.66853L11.6697 1.91713C11.7752 1.81242 11.8588 1.68824 11.9154 1.55171C11.9721 1.41518 12.0008 1.26898 12 1.1215C12.0008 0.974021 11.9721 0.827823 11.9154 0.691291C11.8588 0.554758 11.7752 0.430577 11.6697 0.325867C11.4563 0.117152 11.1676 1.34237e-06 10.8667 1.30209e-06C10.5658 1.26181e-06 10.2771 0.117152 10.0637 0.325866L5.97482 4.29283Z"/>
+                                    </svg>
+                                </button>
+                                <div class="heroes__select-dropdown grid">
+                                    <label id="label-dota" for="dota" class="heroes__select-label flex">
+                                        <input type="radio" id="dota" name="category">
+                                        <span class="heroes__select-switch">
+                                            <span class="heroes__select-switch-action hover"></span>
+                                        </span>
+                                        <span class="heroes__select-description">Dota 2</span>
+                                    </label>
+                                    <label id="label-anime" for="anime" class="heroes__select-label flex">
+                                        <input type="radio" id="anime" name="category">
+                                        <span class="heroes__select-switch">
+                                            <span class="heroes__select-switch-action hover"></span>
+                                        </span>
+                                        <span class="heroes__select-description">Аниме</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <input id="heroName" type="text" class="heroes__input" placeholder="Введите имя героя">
+                            <input id="heroClass" type="text" class="heroes__input" placeholder="Введите класс героя">
+                        </div>
+                        <button type="button" class="heroes__add hover">Добавить героя</button>
+                    </form>
+                    <ul class="heroes__list grid">
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="notifications grid">
+
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
